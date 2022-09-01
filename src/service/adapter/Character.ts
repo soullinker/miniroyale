@@ -17,7 +17,7 @@ class Character {
             eyeColor: record.eye_color,
             birthYear: record.birth_year,
             gender: record.gender,
-            homeWorld:  unknownHomeWorld,
+            homeWorld: unknownHomeWorld,
             filmList: [],
             vehicleList: [],
             starshipList: [],

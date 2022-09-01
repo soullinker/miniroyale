@@ -17,6 +17,6 @@ class CharacterList {
     }
 }
 
-const CharacterListService  = new CharacterList();
+const CharacterListService = new CharacterList();
 
 export default CharacterListService;

@@ -14,6 +14,10 @@ type ListState = {
 }
 
 class List extends RxComponent<ListProps, ListState> {
+    handler = {
+        setList: this.setList.bind(this),
+    }
+
     constructor(props: ListProps) {
         super(props);
 
@@ -21,10 +25,6 @@ class List extends RxComponent<ListProps, ListState> {
             list: [],
             loading: true,
         }
-    }
-
-    handler = {
-        setList: this.setList.bind(this),
     }
 
     setList(list: CharacterList) {

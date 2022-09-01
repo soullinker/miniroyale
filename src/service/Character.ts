@@ -50,7 +50,7 @@ class Character {
         return axios.get<CharacterRecord>(Character.API_URL + 'people/' + id.toString() + '/')
             .then(response => response.data)
             .then(this.handler.fetchCharacter)
-        ;
+            ;
     }
 }
 
