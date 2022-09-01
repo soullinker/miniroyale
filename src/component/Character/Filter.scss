@@ -1,0 +1,15 @@
+@import '../../style/reset';
+
+.character-filter {
+    @include inputReset;
+
+    margin-top: 20px;
+
+    border: 1px solid #cecece;
+    padding: 6px 8px;
+
+    &::placeholder {
+        font-style: italic;
+        opacity: 0.6;
+    }
+}

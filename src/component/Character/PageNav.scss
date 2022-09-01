@@ -1,0 +1,26 @@
+@import '../../style/reset';
+
+@mixin pageNav {
+    padding: 6px 10px;
+    border: 1px solid #cecece;
+}
+
+.page-nav {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+
+    .page-nav__button {
+        @include buttonReset;
+        @include pageNav;
+
+        text-decoration: underline;
+    }
+
+    .page-nav__current {
+        @include pageNav;
+
+        cursor: default;
+    }
+}

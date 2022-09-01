@@ -1,0 +1,33 @@
+@mixin inputInherit {
+    font: inherit;
+
+    padding: 0;
+
+    text-align: inherit;
+
+    color: inherit;
+    border: 0;
+    outline: none;
+    background-color: inherit;
+}
+
+@mixin buttonReset {
+    cursor: pointer;
+    user-select: none;
+
+    @include inputInherit;
+}
+
+@mixin inputReset {
+    @include inputInherit;
+
+    &[type='number']::-webkit-inner-spin-button,
+    &[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+@mixin tableReset {
+    border-spacing: 0 0;
+    border-collapse: collapse;
+}
